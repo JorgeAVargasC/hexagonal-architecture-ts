@@ -1,0 +1,95 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ],
+      "@/assets/*": [
+        "./src/assets/*"
+      ],
+      "@/docs/*": [
+        "./src/assets/shared/docs/*"
+      ],
+      "@/fonts/*": [
+        "./src/assets/shared/fonts/*"
+      ],
+      "@/icons/*": [
+        "./src/assets/shared/icons/*"
+      ],
+      "@/images/*": [
+        "./src/assets/shared/images/*"
+      ],
+      "@/logos/*": [
+        "./src/assets/shared/logos/*"
+      ],
+      "@/videos/*": [
+        "./src/assets/shared/videos/*"
+      ],
+      "@/modules/*": [
+        "./src/modules/*"
+      ],
+      "@/domain/*": [
+        "./src/modules/shared/domain/*"
+      ],
+      "@/infrastructure/*": [
+        "./src/modules/shared/infrastructure/*"
+      ],
+      "@/ui/*": [
+        "./src/ui/*"
+      ],
+      "@/components/*": [
+        "./src/ui/shared/components/*"
+      ],
+      "@/config/*": [
+        "./src/ui/shared/config/*"
+      ],
+      "@/hooks/*": [
+        "./src/ui/shared/hooks/*"
+      ],
+      "@/layouts/*": [
+        "./src/ui/shared/layouts/*"
+      ],
+      "@/routes/*": [
+        "./src/ui/shared/routes/*"
+      ],
+      "@/styles/*": [
+        "./src/ui/shared/styles/*"
+      ],
+      "@/utils/*": [
+        "./src/ui/shared/utils/*"
+      ]
+    },
+    "target": "ESNext",
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ESNext"
+    ],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true
+  },
+  "include": [
+    "src",
+    "src/modules",
+    "tests",
+    "./*.ts"
+  ],
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ],
+}
